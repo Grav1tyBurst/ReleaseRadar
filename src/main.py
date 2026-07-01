@@ -1,15 +1,15 @@
-from datetime import datetime
-
-
-APP_NAME = "ReleaseRadar"
-VERSION = "0.1.0"
+from providers.lastfm import get_artists
 
 
 def main():
-    print("=" * 50)
-    print(f"{APP_NAME} v{VERSION}")
-    print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("=" * 50)
+    print("ReleaseRadar\n")
+
+    artists = get_artists()
+
+    print(f"Found {len(artists)} artists\n")
+
+    for artist in artists:
+        print(f"{artist.name} ({artist.playcount} plays)")
 
 
 if __name__ == "__main__":

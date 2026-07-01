@@ -1,0 +1,4 @@
+filters:
+  period: 12month
+  min_playcount: 20
+  max_artists: 100
