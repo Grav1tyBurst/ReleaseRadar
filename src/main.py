@@ -1,15 +1,13 @@
-from providers.lastfm import get_artists
+from clients.lastfm import get_artists
+from services.artist_library import save_artists
 
 
 def main():
-    print("ReleaseRadar\n")
-
     artists = get_artists()
 
-    print(f"Found {len(artists)} artists\n")
+    save_artists(artists)
 
-    for artist in artists:
-        print(f"{artist.name} ({artist.playcount} plays)")
+    print(f"Saved {len(artists)} artists.")
 
 
 if __name__ == "__main__":
