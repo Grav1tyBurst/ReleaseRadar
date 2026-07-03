@@ -1,7 +1,10 @@
-from dataclasses import dataclass
-
-
-@dataclass
 class Artist:
-    name: str
-    playcount: int
+    def __init__(
+        self,
+        name: str,
+        playcount: int,
+        mbid: str | None = None,
+    ):
+        self.name = name
+        self.playcount = playcount
+        self.mbid = mbid

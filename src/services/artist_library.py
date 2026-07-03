@@ -14,7 +14,8 @@ def save_artists(artists: list[Artist]):
         "artists": [
             {
                 "name": artist.name,
-                "playcount": artist.playcount
+                "playcount": artist.playcount,
+                "mbid": artist.mbid,
             }
             for artist in artists
         ]
@@ -39,7 +40,8 @@ def load_artists() -> list[Artist]:
         artists.append(
             Artist(
                 name=artist["name"],
-                playcount=artist["playcount"]
+                playcount=artist["playcount"],
+                mbid=artist.get("mbid"),
             )
         )
 

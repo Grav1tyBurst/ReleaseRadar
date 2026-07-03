@@ -20,6 +20,10 @@ BLOCKED_SECONDARY_TYPES = {
 
 
 def find_artist_id(artist: Artist) -> str | None:
+    # Если MBID уже известен — используем его
+    if artist.mbid:
+        return artist.mbid
+
     params = {
         "query": artist.name,
         "fmt": "json",
@@ -40,7 +44,10 @@ def find_artist_id(artist: Artist) -> str | None:
     if not data["artists"]:
         return None
 
-    return data["artists"][0]["id"]
+    # Запоминаем MBID в объекте Artist
+    artist.mbid = data["artists"][0]["id"]
+
+    return artist.mbid
 
 
 def get_releases(artist: Artist) -> list[Release]:
@@ -78,6 +85,7 @@ def get_releases(artist: Artist) -> list[Release]:
 
         releases.append(
             Release(
+                mbid=item["id"],
                 artist=artist.name,
                 title=item.get("title", "Unknown"),
                 release_type=primary_type,
