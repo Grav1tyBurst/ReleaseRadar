@@ -1,13 +1,25 @@
-from clients.lastfm import get_artists
-from services.artist_library import save_artists
+from models.artist import Artist
+from clients.musicbrainz import get_releases
 
 
 def main():
-    artists = get_artists()
+    artist = Artist("Her Bright Skies", 0)
 
-    save_artists(artists)
+    releases = get_releases(artist)
 
-    print(f"Saved {len(artists)} artists.")
+    print(f"Found {len(releases)} releases\n")
+
+    for release in releases:
+        print(
+            f"{release.release_date} | "
+            f"{release.release_type:<7} | "
+            f"{release.title}"
+        )
+
+    print()
+    print("Albums :", sum(r.release_type == "Album" for r in releases))
+    print("EPs    :", sum(r.release_type == "EP" for r in releases))
+    print("Singles:", sum(r.release_type == "Single" for r in releases))
 
 
 if __name__ == "__main__":

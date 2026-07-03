@@ -27,3 +27,20 @@ def save_artists(artists: list[Artist]):
             allow_unicode=True,
             sort_keys=False
         )
+
+
+def load_artists() -> list[Artist]:
+    with open(ARTISTS_FILE, "r", encoding="utf-8") as file:
+        data = yaml.safe_load(file)
+
+    artists = []
+
+    for artist in data["artists"]:
+        artists.append(
+            Artist(
+                name=artist["name"],
+                playcount=artist["playcount"]
+            )
+        )
+
+    return artists
