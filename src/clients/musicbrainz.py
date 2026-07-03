@@ -1,3 +1,4 @@
+import time
 import requests
 
 from models.artist import Artist
@@ -19,6 +20,26 @@ BLOCKED_SECONDARY_TYPES = {
 }
 
 
+def musicbrainz_request(
+    endpoint: str,
+    params: dict,
+):
+    time.sleep(1)
+
+    response = requests.get(
+        BASE_URL + endpoint,
+        params=params,
+        headers={
+            "User-Agent": "ReleaseRadar/0.1"
+        },
+        timeout=30,
+    )
+
+    response.raise_for_status()
+
+    return response
+
+
 def find_artist_id(artist: Artist) -> str | None:
     # Если MBID уже известен — используем его
     if artist.mbid:
@@ -29,22 +50,16 @@ def find_artist_id(artist: Artist) -> str | None:
         "fmt": "json",
     }
 
-    response = requests.get(
-        BASE_URL + "artist",
-        params=params,
-        headers={
-            "User-Agent": "ReleaseRadar/0.1"
-        },
+    response = musicbrainz_request(
+        "artist",
+        params,
     )
-
-    response.raise_for_status()
 
     data = response.json()
 
     if not data["artists"]:
         return None
 
-    # Запоминаем MBID в объекте Artist
     artist.mbid = data["artists"][0]["id"]
 
     return artist.mbid
@@ -56,17 +71,13 @@ def get_releases(artist: Artist) -> list[Release]:
     if artist_id is None:
         return []
 
-    response = requests.get(
-        BASE_URL + f"release-group?artist={artist_id}",
-        params={
+    response = musicbrainz_request(
+        "release-group",
+        {
+            "artist": artist_id,
             "fmt": "json",
         },
-        headers={
-            "User-Agent": "ReleaseRadar/0.1"
-        },
     )
-
-    response.raise_for_status()
 
     data = response.json()
 

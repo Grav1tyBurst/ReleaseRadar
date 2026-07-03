@@ -1,10 +1,15 @@
 from pathlib import Path
+
 import yaml
 
 from models.release import Release
 
 DATA_DIR = Path("data")
 RELEASES_FILE = DATA_DIR / "releases.yaml"
+
+
+def library_exists() -> bool:
+    return RELEASES_FILE.exists()
 
 
 def save_releases(releases: list[Release]):
