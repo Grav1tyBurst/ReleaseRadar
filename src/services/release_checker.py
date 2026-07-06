@@ -9,7 +9,7 @@ from services.progress_reporter import ProgressReporter
 from models.release import Release
 
 
-def check_releases(
+def sync_releases(
     limit: int | None = None,
     reporter: ProgressReporter | None = None,
 ) -> list[Release]:

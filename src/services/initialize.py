@@ -3,7 +3,7 @@ from services.artist_library import (
 )
 
 from services.release_checker import (
-    check_releases,
+    sync_releases,
 )
 
 from clients.lastfm import (
@@ -11,14 +11,10 @@ from clients.lastfm import (
 )
 
 
-def initialize_library(
-    progress_callback=None,
-):
+def initialize_library():
 
     artists = get_artists()
 
     save_artists(artists)
 
-    check_releases(
-        progress_callback=progress_callback,
-    )
+    sync_releases()

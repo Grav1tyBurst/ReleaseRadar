@@ -24,6 +24,7 @@ def save_releases(releases: list[Release]):
                 "release_type": release.release_type,
                 "release_date": release.release_date,
                 "track_count": release.track_count,
+                "heard": release.heard,
             }
             for release in releases
         ]
@@ -61,3 +62,16 @@ def load_releases() -> list[Release]:
         )
 
     return releases
+
+
+def get_unheard_releases() -> list[Release]:
+
+    releases = load_releases()
+
+    unheard = []
+
+    for release in releases:
+        if not release.heard:
+            unheard.append(release)
+
+    return unheard
