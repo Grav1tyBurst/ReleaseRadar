@@ -95,15 +95,16 @@ def get_releases(artist: Artist) -> list[Release]:
             continue
 
         releases.append(
-            Release(
-                mbid=item["id"],
-                artist=artist.name,
-                title=item.get("title", "Unknown"),
-                release_type=primary_type,
-                release_date=item.get("first-release-date", ""),
-                track_count=None,
-            )
-        )
+    Release(
+        mbid=item["id"],
+        artist=artist.name,
+        title=item.get("title", "Unknown"),
+        release_type=primary_type,
+        release_date=item.get("first-release-date", ""),
+        track_count=None,
+        heard=False,
+    )
+)
 
     releases.sort(key=lambda release: release.release_date)
 

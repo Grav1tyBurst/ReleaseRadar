@@ -7,6 +7,7 @@ class Release:
         release_type: str,
         release_date: str,
         track_count: int | None = None,
+        heard: bool = False,
     ):
         self.mbid = mbid
         self.artist = artist
@@ -14,3 +15,4 @@ class Release:
         self.release_type = release_type
         self.release_date = release_date
         self.track_count = track_count
+        self.heard = heard

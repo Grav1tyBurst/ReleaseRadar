@@ -11,10 +11,14 @@ from clients.lastfm import (
 )
 
 
-def initialize_library():
+def initialize_library(
+    progress_callback=None,
+):
 
     artists = get_artists()
 
     save_artists(artists)
 
-    check_releases()
+    check_releases(
+        progress_callback=progress_callback,
+    )

@@ -56,6 +56,7 @@ def load_releases() -> list[Release]:
                 release_type=item["release_type"],
                 release_date=item["release_date"],
                 track_count=item["track_count"],
+                heard=item.get("heard", False),
             )
         )
 

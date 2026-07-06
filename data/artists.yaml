@@ -1,6 +1,6 @@
 artists:
 - name: In Fear and Faith
-  playcount: 4745
+  playcount: 4746
   mbid: null
 - name: A Day to Remember
   playcount: 4477
@@ -9,7 +9,7 @@ artists:
   playcount: 3788
   mbid: null
 - name: Bring Me the Horizon
-  playcount: 3244
+  playcount: 3246
   mbid: null
 - name: Her Bright Skies
   playcount: 3088
@@ -18,7 +18,7 @@ artists:
   playcount: 2981
   mbid: null
 - name: Escape The Fate
-  playcount: 2923
+  playcount: 2924
   mbid: null
 - name: Get Scared
   playcount: 2855
@@ -30,13 +30,13 @@ artists:
   playcount: 2656
   mbid: null
 - name: Crown the Empire
-  playcount: 2538
+  playcount: 2539
   mbid: null
 - name: The Devil Wears Prada
   playcount: 2222
   mbid: null
 - name: LANDMVRKS
-  playcount: 2165
+  playcount: 2166
   mbid: null
 - name: Linkin Park
   playcount: 2161
@@ -45,7 +45,7 @@ artists:
   playcount: 1981
   mbid: null
 - name: Adept
-  playcount: 1971
+  playcount: 1973
   mbid: null
 - name: Architects
   playcount: 1939
@@ -63,13 +63,13 @@ artists:
   playcount: 1792
   mbid: null
 - name: Eminem
-  playcount: 1788
+  playcount: 1789
   mbid: null
 - name: Billy Talent
   playcount: 1694
   mbid: null
 - name: Blessthefall
-  playcount: 1651
+  playcount: 1652
   mbid: null
 - name: Miss May I
   playcount: 1579
@@ -87,7 +87,7 @@ artists:
   playcount: 1273
   mbid: null
 - name: Bullet for My Valentine
-  playcount: 1243
+  playcount: 1245
   mbid: null
 - name: Reflections
   playcount: 1219
@@ -99,10 +99,10 @@ artists:
   playcount: 1146
   mbid: null
 - name: Attack Attack!
-  playcount: 1131
+  playcount: 1133
   mbid: null
 - name: The Plot in You
-  playcount: 1041
+  playcount: 1042
   mbid: null
 - name: Joji
   playcount: 1011
@@ -114,7 +114,7 @@ artists:
   playcount: 953
   mbid: null
 - name: Attila
-  playcount: 928
+  playcount: 929
   mbid: null
 - name: Bad Omens
   playcount: 920
@@ -147,7 +147,7 @@ artists:
   playcount: 723
   mbid: null
 - name: We Came as Romans
-  playcount: 713
+  playcount: 714
   mbid: null
 - name: Polaris
   playcount: 712
@@ -192,7 +192,7 @@ artists:
   playcount: 546
   mbid: null
 - name: If I Were You
-  playcount: 522
+  playcount: 524
   mbid: null
 - name: Secrets
   playcount: 504
@@ -204,7 +204,7 @@ artists:
   playcount: 488
   mbid: null
 - name: Sleeping With Sirens
-  playcount: 482
+  playcount: 483
   mbid: null
 - name: Machine Gun Kelly
   playcount: 478
@@ -225,7 +225,7 @@ artists:
   playcount: 458
   mbid: null
 - name: Distortion
-  playcount: 448
+  playcount: 449
   mbid: null
 - name: Underoath
   playcount: 448
@@ -234,7 +234,7 @@ artists:
   playcount: 447
   mbid: null
 - name: Skillet
-  playcount: 440
+  playcount: 441
   mbid: null
 - name: ПОШЛАЯ МОЛЛИ
   playcount: 432
@@ -282,7 +282,7 @@ artists:
   playcount: 379
   mbid: null
 - name: I Killed the Prom Queen
-  playcount: 373
+  playcount: 374
   mbid: null
 - name: The Amity Affliction
   playcount: 371
@@ -332,10 +332,10 @@ artists:
 - name: Senses Fail
   playcount: 314
   mbid: null
-- name: Dead by April
-  playcount: 312
-  mbid: null
 - name: Destroy Rebuild Until God Shows
+  playcount: 313
+  mbid: null
+- name: Dead by April
   playcount: 312
   mbid: null
 - name: Surface 2 Air
@@ -365,11 +365,11 @@ artists:
 - name: Limp Bizkit
   playcount: 272
   mbid: null
-- name: Noize MC
+- name: Halsey
   playcount: 270
   mbid: null
-- name: Halsey
-  playcount: 269
+- name: Noize MC
+  playcount: 270
   mbid: null
 - name: blackbear
   playcount: 267
@@ -417,7 +417,7 @@ artists:
   playcount: 218
   mbid: null
 - name: Marina
-  playcount: 216
+  playcount: 217
   mbid: null
 - name: Bumble Beezy
   playcount: 215
@@ -519,7 +519,7 @@ artists:
   playcount: 163
   mbid: null
 - name: Horus
-  playcount: 161
+  playcount: 162
   mbid: null
 - name: Wolves at the Gate
   playcount: 161
@@ -944,6 +944,9 @@ artists:
 - name: chaosbay
   playcount: 73
   mbid: null
+- name: Imagine Dragons
+  playcount: 73
+  mbid: null
 - name: Mujuice
   playcount: 73
   mbid: null
@@ -954,9 +957,6 @@ artists:
   playcount: 72
   mbid: null
 - name: D12
-  playcount: 72
-  mbid: null
-- name: Imagine Dragons
   playcount: 72
   mbid: null
 - name: нексюша
@@ -1031,6 +1031,9 @@ artists:
 - name: The Early November
   playcount: 64
   mbid: null
+- name: Unprocessed
+  playcount: 64
+  mbid: null
 - name: Финнеас О’Коннелл
   playcount: 64
   mbid: null
@@ -1044,9 +1047,6 @@ artists:
   playcount: 62
   mbid: null
 - name: NEFFEX
-  playcount: 62
-  mbid: null
-- name: Unprocessed
   playcount: 62
   mbid: null
 - name: Drop Dead, Gorgeous
@@ -1241,6 +1241,9 @@ artists:
 - name: BLACKPINK
   playcount: 46
   mbid: null
+- name: Foreign Hands
+  playcount: 46
+  mbid: null
 - name: Kubbi
   playcount: 46
   mbid: null
@@ -1257,9 +1260,6 @@ artists:
   playcount: 45
   mbid: null
 - name: Dayshell
-  playcount: 45
-  mbid: null
-- name: Foreign Hands
   playcount: 45
   mbid: null
 - name: Hot Milk
@@ -1318,6 +1318,9 @@ artists:
   mbid: null
 - name: Walking with Strangers
   playcount: 43
+  mbid: null
+- name: Future Palace
+  playcount: 42
   mbid: null
 - name: If These Trees Could Talk
   playcount: 42
@@ -1460,7 +1463,13 @@ artists:
 - name: Kyle Gordon
   playcount: 36
   mbid: null
+- name: The Butcher Sisters
+  playcount: 36
+  mbid: null
 - name: Anacondaz
+  playcount: 35
+  mbid: null
+- name: Boxplot
   playcount: 35
   mbid: null
 - name: Carbon Based Lifeforms
@@ -1523,6 +1532,9 @@ artists:
 - name: The Fray
   playcount: 34
   mbid: null
+- name: Замай
+  playcount: 34
+  mbid: null
 - name: 生 Conform 死
   playcount: 34
   mbid: null
@@ -1553,9 +1565,6 @@ artists:
 - name: Twenty One Pilots
   playcount: 33
   mbid: null
-- name: Замай
-  playcount: 33
-  mbid: null
 - name: Black Sun Empire
   playcount: 32
   mbid: null
@@ -1566,9 +1575,6 @@ artists:
   playcount: 32
   mbid: null
 - name: Dio
-  playcount: 32
-  mbid: null
-- name: Future Palace
   playcount: 32
   mbid: null
 - name: Oceans Ate Alaska
@@ -1661,9 +1667,6 @@ artists:
 - name: Tech N9ne
   playcount: 30
   mbid: null
-- name: The Butcher Sisters
-  playcount: 30
-  mbid: null
 - name: Armin van Buuren
   playcount: 29
   mbid: null
@@ -1707,6 +1710,9 @@ artists:
   playcount: 28
   mbid: null
 - name: Code Orange
+  playcount: 28
+  mbid: null
+- name: Dying Wish
   playcount: 28
   mbid: null
 - name: Egypt Central
@@ -1767,9 +1773,6 @@ artists:
   playcount: 27
   mbid: null
 - name: Disturbed
-  playcount: 27
-  mbid: null
-- name: Dying Wish
   playcount: 27
   mbid: null
 - name: Half Me

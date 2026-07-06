@@ -44,12 +44,43 @@ async def check(
         "Проверяю новые релизы..."
     )
 
-    new_releases = check_releases(limit=5)
+    new_releases = check_releases()
 
     await update.message.reply_text(
         format_new_releases(new_releases)
     )
 
+def progress_callback(
+    current: int,
+    total: int,
+):
+    print(f"{current}/{total}")
+
+from clients.telegram import progress_callback
+from services.artist_library import (
+    save_artists,
+)
+
+from services.release_checker import (
+    check_releases,
+)
+
+from clients.lastfm import (
+    get_artists,
+)
+
+
+def initialize_library(
+    progress_callback=progress_callback,
+):
+
+    artists = get_artists()
+
+    save_artists(artists)
+
+    check_releases(
+        progress_callback=progress_callback,
+    )
 
 async def initialize(
     update: Update,
@@ -63,7 +94,7 @@ async def initialize(
         "Это может занять несколько минут."
     )
 
-    initialize_library()
+    initialize_library(progress_callback=progress_callback)
 
     await update.message.reply_text(
         "Импорт завершён."
